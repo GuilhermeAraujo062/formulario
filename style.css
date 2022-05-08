@@ -44,10 +44,31 @@ legend {
     letter-spacing: 2px;
 }
 
-.labelInput {
+.inputUser:focus ~ .labelInput, .inputUser:valid ~ .labelInput {
+    color: dodgerblue;
+    top: -20px;
+    
+}
+
+/* .labelInput {
     position: absolute;
     top: 0px;
     left: 0px;
     pointer-events: none;
     transition: .5s;
+} */
+
+.botao {
+    background-image: linear-gradient(to right, rgb(74, 74, 255), rgb(131, 43, 182));
+    color: white;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    width: 100%;
+}
+
+.botao:hover {
+    background-image: linear-gradient(to right, rgb(52, 52, 255), rgb(127, 31, 182));
+    cursor: pointer;
 }
